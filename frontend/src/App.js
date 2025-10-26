@@ -145,13 +145,14 @@ function App() {
       <section id="work" className="work-section">
         <div className="section-container">
           <h2 className="section-title">Work With Me</h2>
-          <p className="section-subtitle">This isn't a newsletter—it's a thinking partnership. Each tier reflects a different level of access, depth, and shared work.</p>
+          <p className="section-subtitle">This isn't a newsletter—it's a thinking partnership. Each level represents a different degree of access, collaboration, and shared outcomes. I work closely with a select group of partners each year: 8 in Thought Partnership, 6 in Strategic Advisory, 3 in the Founding Partner Circle, and 1 Private Contract Partnership.</p>
           <div className="work-grid">
             {workData.map((tier) => (
               <Card key={tier.id} className={`work-card ${tier.featured ? 'featured' : ''}`}>
                 <CardHeader>
                   <div className="tier-header">
                     <div>
+                      <div className="tier-icon">{tier.icon}</div>
                       <CardTitle className="tier-name">{tier.tier}</CardTitle>
                       {tier.level && <p className="tier-level">{tier.level}</p>}
                     </div>
@@ -172,6 +173,17 @@ function App() {
                       </div>
                     ))}
                   </div>
+                  {tier.cta && (
+                    <Button 
+                      asChild
+                      className="tier-cta"
+                      variant={tier.id === 1 ? "outline" : "default"}
+                    >
+                      <a href={tier.link} target="_blank" rel="noopener noreferrer">
+                        {tier.cta} →
+                      </a>
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
