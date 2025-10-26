@@ -238,11 +238,6 @@ export const contactData = {
       label: "Email",
       url: "mailto:theresa@onesynergee.org",
       icon: "mail"
-    },
-    {
-      label: "LinkedIn",
-      url: "https://linkedin.com/in/theresarenee",
-      icon: "linkedin"
     }
   ]
 };
