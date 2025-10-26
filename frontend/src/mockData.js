@@ -146,7 +146,7 @@ export const workData = [
       "Defined boundaries and no conflicts of interest"
     ],
     cta: "Contact",
-    link: "mailto:theresa@onesynergee.org",
+    link: "mailto:about@thisistrese.me",
     featured: true
   }
 ];
