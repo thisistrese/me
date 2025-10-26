@@ -1,12 +1,24 @@
-/* Root Variables - Brand Colors */
+/* Root Variables - Refined Elegant Palette */
 :root {
-  --clay: #8E6E5A;
-  --forest-green: #214E41;
-  --muted-gold: #C2A25B;
-  --slate-blue: #4B6073;
-  --sand: #E9E2D4;
-  --navy: #1C2834;
-  --sage: #9FAE94;
+  /* Primary elegant neutrals */
+  --champagne: #F5F1EB;
+  --warm-gray: #D4C9C0;
+  --soft-taupe: #B8ADA3;
+  --charcoal: #2B2B2B;
+  --deep-charcoal: #1A1A1A;
+  
+  /* Accent colors - understated luxury */
+  --rose-gold: #D4A29C;
+  --dusty-rose: #C4989E;
+  --soft-sage: #B5C4B8;
+  --warm-cream: #FFFBF5;
+  
+  /* Functional colors */
+  --text-primary: #2B2B2B;
+  --text-secondary: #6B6B6B;
+  --text-muted: #9B9B9B;
+  --border-light: rgba(180, 173, 163, 0.3);
+  --border-medium: rgba(180, 173, 163, 0.5);
 }
 
 * {
