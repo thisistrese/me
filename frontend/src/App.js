@@ -180,7 +180,7 @@ function App() {
                       variant={tier.id === 1 ? "outline" : "default"}
                     >
                       <a href={tier.link} target="_blank" rel="noopener noreferrer">
-                        {tier.cta} →
+                        {tier.cta}
                       </a>
                     </Button>
                   )}
