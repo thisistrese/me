@@ -4,7 +4,7 @@ import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import { Separator } from './components/ui/separator';
-import { Mail, Linkedin, Calendar, MapPin, Menu, X } from 'lucide-react';
+import { Mail, Linkedin, Calendar, MapPin, Menu, X, Check } from 'lucide-react';
 import {
   heroData,
   storyData,
@@ -117,24 +117,37 @@ function App() {
         </div>
       </section>
 
-      {/* Work Section */}
+      {/* Work With Me Section */}
       <section id="work" className="work-section">
         <div className="section-container">
-          <h2 className="section-title">Work</h2>
+          <h2 className="section-title">Work With Me</h2>
+          <p className="section-subtitle">This isn't a newsletter—it's a thinking partnership. Each tier reflects a different level of access, depth, and shared work.</p>
           <div className="work-grid">
-            {workData.map((item) => (
-              <Card key={item.id} className="work-card">
+            {workData.map((tier) => (
+              <Card key={tier.id} className={`work-card ${tier.featured ? 'featured' : ''}`}>
                 <CardHeader>
-                  <div className="work-header">
+                  <div className="tier-header">
                     <div>
-                      <CardTitle className="work-title">{item.title}</CardTitle>
-                      <CardDescription className="work-role">{item.role}</CardDescription>
+                      <CardTitle className="tier-name">{tier.tier}</CardTitle>
+                      {tier.level && <p className="tier-level">{tier.level}</p>}
                     </div>
-                    <Badge variant="outline" className="work-years">{item.years}</Badge>
+                    <div className="tier-price-box">
+                      <div className="tier-price">{tier.price}</div>
+                      <div className="tier-price-detail">{tier.priceDetail}</div>
+                    </div>
                   </div>
+                  <Badge variant="outline" className="tier-capacity">{tier.capacity}</Badge>
                 </CardHeader>
                 <CardContent>
-                  <p className="work-summary">{item.summary}</p>
+                  <p className="tier-description">{tier.description}</p>
+                  <div className="tier-benefits">
+                    {tier.benefits.map((benefit, index) => (
+                      <div key={index} className="benefit-item">
+                        <Check className="benefit-icon" size={16} />
+                        <span>{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -150,10 +163,15 @@ function App() {
             {brandsData.map((brand) => (
               <Card key={brand.id} className="brand-card">
                 <CardHeader>
-                  <CardTitle className="brand-name">{brand.name}</CardTitle>
+                  <div className="brand-header">
+                    <CardTitle className="brand-name">{brand.name}</CardTitle>
+                    <Badge variant="outline" className="brand-years">{brand.years}</Badge>
+                  </div>
+                  <CardDescription className="brand-role">{brand.role}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="brand-tagline">{brand.tagline}</p>
+                  <p className="brand-summary">{brand.summary}</p>
                 </CardContent>
               </Card>
             ))}

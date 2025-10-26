@@ -15,69 +15,106 @@ export const storyData = {
   anchorLine: "I design practical systems with and for people—so the good work lasts."
 };
 
+// Work With Me - Consulting Tiers
 export const workData = [
   {
     id: 1,
-    title: "MaidHop",
-    role: "Founder",
-    summary: "We create dignified, tech-enabled pathways for work and independence—linking skilled cleaning professionals with households and businesses through fair pay, flexible scheduling, and community-driven support.",
-    years: "2013 – Present"
+    tier: "Public Conversations",
+    price: "Free",
+    priceDetail: "$0/month",
+    capacity: "Unlimited",
+    description: "Open essays, reflections, and public notes. Access to selected case studies and interviews. Join the public conversation and stay connected to the work as it unfolds.",
+    benefits: [
+      "Open essays and reflections",
+      "Selected case studies",
+      "Community polls and threads",
+      "Public event invitations"
+    ]
   },
   {
     id: 2,
-    title: "OneSynergee, Inc.",
-    role: "Global Initiatives",
-    summary: "We work with communities to design practical, sustainable ways that strengthen local economies and resilience across the Global South—advancing shared goals through collaboration, grounded strategy, and lasting local leadership.",
-    years: "2021 – Present"
+    tier: "Thought Partnership",
+    level: "Green Belt Level",
+    price: "$2,500",
+    priceDetail: "$2,500/month or $25,000/year",
+    capacity: "Up to 20 subscribers per year",
+    description: "Structured thought partnership—practical, personal, and iterative. Two private Zoom strategy sessions per month with recordings and transcripts.",
+    benefits: [
+      "2 private Zoom sessions/month",
+      "Private WhatsApp community",
+      "Live Q&A access",
+      "Behind-the-scenes frameworks",
+      "Private social media channels"
+    ]
   },
   {
     id: 3,
-    title: "ACCF (an ACV Initiative)",
-    role: "Program Director",
-    summary: "We develop climate and infrastructure readiness programs that equip emerging leaders with the skills, standards, and project experience needed to drive measurable progress within their regions.",
-    years: "2023 – Present"
+    tier: "Strategic Engagement",
+    level: "Black Belt Level",
+    price: "$25,000",
+    priceDetail: "$25,000/year",
+    capacity: "Up to 12 subscribers per year",
+    description: "Functions like a year-long private advisory board. Six in-person or virtual strategic intensives with continuous WhatsApp access.",
+    benefits: [
+      "6 strategic intensives per year",
+      "Continuous WhatsApp access",
+      "Quarterly leadership clinics",
+      "Peer strategist community",
+      "Private playbooks and materials"
+    ]
   },
   {
     id: 4,
-    title: "AgriCharity",
-    role: "Founding Director",
-    summary: "We connect smallholder farmers with markets through climate-smart, transparent agriculture systems—strengthening local production networks and advancing sustainable, verifiable trade models.",
-    years: "2024 – Present"
-  },
-  {
-    id: 5,
-    title: "Green Pathways",
-    role: "Strategic Lead (Coming Soon)",
-    summary: "We are building a phased green-jobs pathway that connects training, certification, and verified employment—advancing local capacity for renewable energy and sustainable infrastructure across partner regions.",
-    years: "2025 – Upcoming"
+    tier: "Founding Partner Circle",
+    level: "Champion Level",
+    price: "$75,000",
+    priceDetail: "$75,000/year",
+    capacity: "8 founding members per year",
+    description: "Shape what's next, together. Twelve in-person strategic sessions with custom frameworks and co-authored roadmaps.",
+    benefits: [
+      "12 in-person sessions per year",
+      "Custom strategic frameworks",
+      "Early research access",
+      "Peer founder group",
+      "Founding Partner recognition"
+    ],
+    featured: true
   }
 ];
 
+// Brands - Reorganized by priority: for-profit and longest tenure first
 export const brandsData = [
   {
     id: 1,
-    name: "OneSynergee",
-    tagline: "Backbone for community-driven development and cross-sector collaboration."
+    name: "MaidHop",
+    role: "Founder",
+    tagline: "Tech-enabled dignified work and upward mobility pathways.",
+    years: "2013 – Present",
+    summary: "We create dignified, tech-enabled pathways for work and independence—linking skilled cleaning professionals with households and businesses through fair pay, flexible scheduling, and community-driven support."
   },
   {
     id: 2,
-    name: "AgriCharity",
-    tagline: "Harvest tracking and market access for climate-smart smallholders."
+    name: "OneSynergee, Inc.",
+    role: "Global Initiatives",
+    tagline: "Backbone for community-driven development and cross-sector collaboration.",
+    years: "2021 – Present",
+    summary: "We work with communities to design practical, sustainable ways that strengthen local economies and resilience across the Global South—advancing shared goals through collaboration, grounded strategy, and lasting local leadership."
   },
   {
     id: 3,
-    name: "MaidHop",
-    tagline: "Tech-enabled dignified work and upward mobility pathways."
+    name: "ACCF (an ACV Initiative)",
+    role: "Program Director",
+    tagline: "Climate-capacity fellowships aligned to real deployment needs.",
+    years: "2023 – Present",
+    summary: "We develop climate and infrastructure readiness programs that equip emerging leaders with the skills, standards, and project experience needed to drive measurable progress within their regions."
   },
   {
     id: 4,
-    name: "ACCF (an ACV Initiative)",
-    tagline: "Climate-capacity fellowships aligned to real deployment needs."
-  },
-  {
-    id: 5,
-    name: "Green Pathways (Coming Soon)",
-    tagline: "Phased green-jobs training and placement across partner regions."
+    name: "AgriCharity",
+    role: "Founding Director",
+    tagline: "Harvest tracking and market access for climate-smart smallholders.",
+    years: "2024 – Present",
+    summary: "We connect smallholder farmers with markets through climate-smart, transparent agriculture systems—strengthening local production networks and advancing sustainable, verifiable trade models."
   }
 ];
 
