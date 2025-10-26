@@ -4,7 +4,7 @@ import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 import { Separator } from './components/ui/separator';
-import { Mail, Linkedin, Calendar, MapPin, User } from 'lucide-react';
+import { Mail, Linkedin, Calendar, MapPin, Menu, X } from 'lucide-react';
 import {
   heroData,
   storyData,
@@ -17,6 +17,7 @@ import {
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
