@@ -171,18 +171,18 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 8rem 2.5rem 6rem;
-  background: linear-gradient(135deg, var(--sand) 0%, #f5f1ea 100%);
+  padding: 10rem 2.5rem 6rem;
+  background: linear-gradient(135deg, var(--warm-cream) 0%, var(--champagne) 100%);
   overflow: hidden;
 }
 
 .hero-decoration {
   position: absolute;
-  top: 10%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(33, 78, 65, 0.08) 0%, transparent 70%);
+  top: 15%;
+  right: -8%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 162, 156, 0.08) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -195,40 +195,43 @@ body {
 
 .hero-title {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: clamp(3rem, 8vw, 6rem);
-  color: var(--navy);
+  font-weight: 300;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  color: var(--charcoal);
   margin-bottom: 1.5rem;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
   line-height: 1.1;
 }
 
 .hero-subtitle {
   font-family: 'Source Serif 4', Georgia, serif;
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  color: var(--slate-blue);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  color: var(--text-secondary);
   margin-bottom: 3rem;
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 400;
 }
 
 .hero-cta {
-  background-color: var(--forest-green);
+  background-color: var(--dusty-rose);
   color: white;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   padding: 1.5rem 3rem;
-  font-size: 1.1rem;
-  border-radius: 50px;
+  font-size: 1rem;
+  border-radius: 2px;
   border: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
 }
 
 .hero-cta:hover {
-  background-color: #2d6a57;
-  transform: translateY(-2px);
+  background-color: var(--rose-gold);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(212, 162, 156, 0.2);
 }
 
 /* Section Styling */
