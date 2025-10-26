@@ -22,7 +22,7 @@ export const brandsData = [
     name: "MaidHop",
     role: "Founder",
     tagline: "Tech-enabled dignified work and upward mobility pathways.",
-    years: "2013 – Present",
+    years: "2011 – Present",
     summary: "We create dignified, tech-enabled pathways for work and independence—linking skilled cleaning professionals with households and businesses through fair pay, flexible scheduling, and community-driven support."
   },
   {
@@ -38,7 +38,7 @@ export const brandsData = [
     name: "ACCF (an ACV Initiative)",
     role: "Program Director",
     tagline: "Climate-capacity fellowships aligned to real deployment needs.",
-    years: "2023 – Present",
+    years: "2025 – Present",
     summary: "We develop climate and infrastructure readiness programs that equip emerging leaders with the skills, standards, and project experience needed to drive measurable progress within their regions."
   },
   {
@@ -46,7 +46,7 @@ export const brandsData = [
     name: "AgriCharity",
     role: "Founding Director",
     tagline: "Harvest tracking and market access for climate-smart smallholders.",
-    years: "2024 – Present",
+    years: "2025 – Present",
     summary: "We connect smallholder farmers with markets through climate-smart, transparent agriculture systems—strengthening local production networks and advancing sustainable, verifiable trade models."
   }
 ];
