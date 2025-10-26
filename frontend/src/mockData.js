@@ -3,7 +3,7 @@
 export const heroData = {
   title: "Theresa Renee",
   subtitle: "Building solutions that connect people, purpose, and progress.",
-  cta: "Work with me"
+  cta: "Work With Me"
 };
 
 export const storyData = {
