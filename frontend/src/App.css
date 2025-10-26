@@ -499,7 +499,8 @@ section {
 
 /* Inspiration Section */
 .inspiration-section {
-  background-color: white;
+  background: linear-gradient(180deg, var(--champagne) 0%, var(--warm-cream) 100%);
+  padding: 6rem 2.5rem;
 }
 
 .inspiration-header {
@@ -511,14 +512,16 @@ section {
 
 .substack-link {
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  color: var(--forest-green);
+  font-weight: 400;
+  color: var(--dusty-rose);
   text-decoration: none;
   transition: color 0.3s ease;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
 }
 
 .substack-link:hover {
-  color: var(--navy);
+  color: var(--rose-gold);
 }
 
 .inspiration-grid {
@@ -528,14 +531,15 @@ section {
 }
 
 .inspiration-card {
-  background: var(--sand);
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 .inspiration-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(33, 78, 65, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(43, 43, 43, 0.08);
 }
 
 .inspiration-meta {
@@ -547,8 +551,9 @@ section {
 
 .inspiration-date {
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  color: var(--slate-blue);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
 }
 
 .inspiration-tags {
@@ -558,25 +563,28 @@ section {
 
 .tag {
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
-  background-color: rgba(33, 78, 65, 0.1);
-  color: var(--forest-green);
+  font-size: 0.8rem;
+  background-color: rgba(212, 162, 156, 0.12);
+  color: var(--dusty-rose);
   border: none;
+  letter-spacing: 0.03em;
 }
 
 .inspiration-title {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.35rem;
-  color: var(--navy);
+  color: var(--charcoal);
   margin-bottom: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
 }
 
 .inspiration-excerpt {
   font-family: 'Source Serif 4', Georgia, serif;
-  color: var(--slate-blue);
+  color: var(--text-secondary);
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* Connect Section */
