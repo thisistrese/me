@@ -91,7 +91,7 @@ function App() {
           <h1 className="hero-title">{heroData.title}</h1>
           <p className="hero-subtitle">{heroData.subtitle}</p>
           <Button 
-            onClick={() => scrollToSection('brands')} 
+            onClick={() => scrollToSection('work')} 
             className="hero-cta"
             size="lg"
           >
