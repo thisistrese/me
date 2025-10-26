@@ -51,69 +51,102 @@ export const brandsData = [
   }
 ];
 
-// Work With Me - Consulting Tiers
+// Work With Me - Partnership Tiers
 export const workData = [
   {
     id: 1,
     tier: "Public Conversations",
+    level: "Open Access",
+    icon: "🟢",
     price: "Free",
-    priceDetail: "$0/month",
+    priceDetail: "Free",
     capacity: "Unlimited",
-    description: "Open essays, reflections, and public notes. Access to selected case studies and interviews. Join the public conversation and stay connected to the work as it unfolds.",
+    description: "A space for curiosity, learning, and connection. Ideal for emerging professionals and enthusiasts exploring systems thinking and practical design.",
     benefits: [
       "Open essays and reflections",
-      "Selected case studies",
+      "Selected case studies and interviews",
       "Community polls and threads",
-      "Public event invitations"
-    ]
+      "Invitations to public events"
+    ],
+    cta: "Join the Conversation",
+    link: "https://thisistrese.substack.com"
   },
   {
     id: 2,
     tier: "Thought Partnership",
-    level: "Green Belt Level",
-    price: "$2,500",
-    priceDetail: "$2,500/month or $25,000/year",
-    capacity: "Up to 20 subscribers per year",
-    description: "Structured thought partnership—practical, personal, and iterative. Two private Zoom strategy sessions per month with recordings and transcripts.",
+    level: "Core Level",
+    icon: "⚫",
+    price: "$25,000",
+    priceDetail: "$25,000/year",
+    capacity: "8 partners",
+    description: "Structured, practical collaboration through twice-monthly strategy sessions. Designed for professionals seeking guided clarity and real-time application.",
     benefits: [
-      "2 private Zoom sessions/month",
-      "Private WhatsApp community",
-      "Live Q&A access",
-      "Behind-the-scenes frameworks",
-      "Private social media channels"
-    ]
+      "Two private Zoom sessions per month (recorded + transcribed)",
+      "Private WhatsApp community for active exchange",
+      "Behind-the-scenes frameworks and field notes",
+      "Live Q&A and cohort discussions",
+      "Access to private social channels"
+    ],
+    cta: "Apply for Partnership",
+    link: "https://thisistrese.substack.com/subscribe"
   },
   {
     id: 3,
-    tier: "Strategic Engagement",
-    level: "Black Belt Level",
-    price: "$25,000",
-    priceDetail: "$25,000/year",
-    capacity: "Up to 12 subscribers per year",
-    description: "Functions like a year-long private advisory board. Six in-person or virtual strategic intensives with continuous WhatsApp access.",
+    tier: "Strategic Advisory",
+    level: "Advanced Level",
+    icon: "⚪",
+    price: "$55,000",
+    priceDetail: "$55,000/year",
+    capacity: "6 partners",
+    description: "A year-long private advisory relationship designed for deeper transformation. Ideal for senior leaders, founders, and teams leading active initiatives.",
     benefits: [
-      "6 strategic intensives per year",
-      "Continuous WhatsApp access",
-      "Quarterly leadership clinics",
+      "Six strategic intensives (in-person or virtual) per year",
+      "Continuous direct contact and WhatsApp access",
+      "Quarterly leadership and systems clinics",
       "Peer strategist community",
-      "Private playbooks and materials"
-    ]
+      "Tailored playbooks and materials"
+    ],
+    cta: "Request Advisory Access",
+    link: "https://thisistrese.substack.com/subscribe"
   },
   {
     id: 4,
     tier: "Founding Partner Circle",
-    level: "Champion Level",
+    level: "Executive Level",
+    icon: "🏆",
     price: "$75,000",
     priceDetail: "$75,000/year",
-    capacity: "8 founding members per year",
-    description: "Shape what's next, together. Twelve in-person strategic sessions with custom frameworks and co-authored roadmaps.",
+    capacity: "3 founding partners",
+    description: "A small, high-performing peer circle shaping what's next, together. Ideal for founders, executives, and philanthropists co-creating systemic solutions.",
     benefits: [
-      "12 in-person sessions per year",
-      "Custom strategic frameworks",
-      "Early research access",
-      "Peer founder group",
-      "Founding Partner recognition"
+      "Twelve in-person strategic sessions annually",
+      "Co-authored frameworks and roadmaps",
+      "Early access to research and design labs",
+      "Peer circle of founders and innovators",
+      "Recognition as a Founding Partner (optional)"
     ],
+    cta: "Inquire to Join",
+    link: "https://thisistrese.substack.com/contact",
+    featured: true
+  },
+  {
+    id: 5,
+    tier: "Private Contract Partnership",
+    level: "Embedded Collaboration",
+    icon: "💼",
+    price: "$150,000",
+    priceDetail: "$150,000/year",
+    capacity: "1 contract",
+    description: "A fully embedded annual engagement for one organization or initiative. Designed for integrated systems design, strategic growth, and aligned omnichannel work.",
+    benefits: [
+      "Annual embedded collaboration and co-design",
+      "Integrated brand and content presence",
+      "Strategic promotion across professional channels",
+      "Flexible work-from-anywhere structure",
+      "Defined boundaries and no conflicts of interest"
+    ],
+    cta: "Contact for Availability",
+    link: "mailto:theresa@onesynergee.org",
     featured: true
   }
 ];
