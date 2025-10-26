@@ -68,7 +68,7 @@ export const workData = [
       "Community polls and threads",
       "Invitations to public events"
     ],
-    cta: "Join the Conversation",
+    cta: "Join",
     link: "https://thisistrese.substack.com"
   },
   {
@@ -87,7 +87,7 @@ export const workData = [
       "Live Q&A and cohort discussions",
       "Access to private social channels"
     ],
-    cta: "Apply for Partnership",
+    cta: "Apply",
     link: "https://thisistrese.substack.com/subscribe"
   },
   {
@@ -106,7 +106,7 @@ export const workData = [
       "Peer strategist community",
       "Tailored playbooks and materials"
     ],
-    cta: "Request Advisory Access",
+    cta: "Request",
     link: "https://thisistrese.substack.com/subscribe"
   },
   {
@@ -125,7 +125,7 @@ export const workData = [
       "Peer circle of founders and innovators",
       "Recognition as a Founding Partner (optional)"
     ],
-    cta: "Inquire to Join",
+    cta: "Inquire",
     link: "https://thisistrese.substack.com/contact",
     featured: true
   },
@@ -145,7 +145,7 @@ export const workData = [
       "Flexible work-from-anywhere structure",
       "Defined boundaries and no conflicts of interest"
     ],
-    cta: "Contact for Availability",
+    cta: "Contact",
     link: "mailto:theresa@onesynergee.org",
     featured: true
   }
