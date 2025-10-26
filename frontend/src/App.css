@@ -589,7 +589,8 @@ section {
 
 /* Connect Section */
 .connect-section {
-  background: linear-gradient(135deg, var(--sand) 0%, white 100%);
+  background: white;
+  padding: 6rem 2.5rem;
 }
 
 .connect-headline {
@@ -599,9 +600,10 @@ section {
 
 .headline-text {
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--navy);
+  color: var(--charcoal);
+  letter-spacing: 0.01em;
 }
 
 .contact-links {
@@ -613,47 +615,50 @@ section {
 }
 
 .contact-button {
-  background-color: var(--forest-green);
+  background-color: var(--dusty-rose);
   color: white;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  padding: 1.5rem 2.5rem;
-  border-radius: 50px;
+  font-weight: 400;
+  padding: 1.25rem 2.5rem;
+  border-radius: 2px;
   border: none;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  letter-spacing: 0.04em;
+  transition: all 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: #2d6a57;
-  transform: translateY(-2px);
+  background-color: var(--rose-gold);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(212, 162, 156, 0.25);
 }
 
 .contact-button-outline {
   background: transparent;
-  color: var(--forest-green);
-  border: 2px solid var(--forest-green);
+  color: var(--dusty-rose);
+  border: 1px solid var(--dusty-rose);
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  padding: 1.5rem 2.5rem;
-  border-radius: 50px;
+  font-weight: 400;
+  padding: 1.25rem 2.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.04em;
   transition: all 0.3s ease;
 }
 
 .contact-button-outline:hover {
-  background-color: var(--forest-green);
+  background-color: var(--dusty-rose);
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .button-icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   margin-right: 0.5rem;
 }
 
 .connect-separator {
   margin: 4rem 0;
-  background-color: rgba(142, 110, 90, 0.3);
+  background-color: var(--border-light);
 }
 
 /* Events */
@@ -669,10 +674,11 @@ section {
 
 .events-title {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 2rem;
-  color: var(--navy);
+  color: var(--charcoal);
   margin-bottom: 2rem;
+  letter-spacing: 0.01em;
 }
 
 .events-list {
@@ -681,26 +687,28 @@ section {
 }
 
 .event-card {
-  background: white;
-  border: 1px solid rgba(33, 78, 65, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--warm-cream);
+  border: 1px solid var(--border-light);
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 .event-card:hover {
   transform: translateX(4px);
-  box-shadow: 0 4px 16px rgba(33, 78, 65, 0.1);
+  box-shadow: 0 4px 16px rgba(43, 43, 43, 0.06);
 }
 
 .event-card.past {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .event-title {
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 1.35rem;
-  color: var(--navy);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--charcoal);
   margin-bottom: 1rem;
+  letter-spacing: 0.01em;
 }
 
 .event-meta {
@@ -715,41 +723,44 @@ section {
   align-items: center;
   gap: 0.5rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  color: var(--slate-blue);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 .event-icon {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .event-role {
-  background-color: var(--muted-gold);
+  background-color: var(--dusty-rose);
   color: white;
   font-family: 'Inter', sans-serif;
   border: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
 }
 
 .event-description {
   font-family: 'Source Serif 4', Georgia, serif;
-  color: var(--slate-blue);
+  color: var(--text-secondary);
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* Footer */
 .footer {
-  background-color: var(--navy);
-  color: var(--sand);
+  background-color: var(--deep-charcoal);
+  color: var(--warm-gray);
   padding: 3rem 2.5rem;
   text-align: center;
 }
 
 .footer-content p {
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  opacity: 0.9;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
 }
 
 /* Responsive Design */
