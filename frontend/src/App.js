@@ -268,61 +268,74 @@ function App() {
 
           {/* Events Section */}
           <div className="events-container">
-            {/* Upcoming Events */}
-            <div className="events-section">
-              <h3 className="events-title">Upcoming Events</h3>
-              <div className="events-list">
-                {eventsData.upcoming.map((event) => (
-                  <Card key={event.id} className="event-card">
-                    <CardHeader>
-                      <CardTitle className="event-title">{event.title}</CardTitle>
-                      <div className="event-meta">
-                        <span className="event-info">
-                          <Calendar className="event-icon" />
-                          {event.date}
-                        </span>
-                        <span className="event-info">
-                          <MapPin className="event-icon" />
-                          {event.location}
-                        </span>
-                        <Badge className="event-role">{event.role}</Badge>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="event-description">{event.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+            {eventsData.comingSoon ? (
+              <div className="coming-soon-container">
+                <h3 className="coming-soon-title">Events</h3>
+                <p className="coming-soon-text">Coming Soon</p>
               </div>
-            </div>
+            ) : (
+              <>
+                {/* Upcoming Events */}
+                {eventsData.upcoming.length > 0 && (
+                  <div className="events-section">
+                    <h3 className="events-title">Upcoming Events</h3>
+                    <div className="events-list">
+                      {eventsData.upcoming.map((event) => (
+                        <Card key={event.id} className="event-card">
+                          <CardHeader>
+                            <CardTitle className="event-title">{event.title}</CardTitle>
+                            <div className="event-meta">
+                              <span className="event-info">
+                                <Calendar className="event-icon" />
+                                {event.date}
+                              </span>
+                              <span className="event-info">
+                                <MapPin className="event-icon" />
+                                {event.location}
+                              </span>
+                              <Badge className="event-role">{event.role}</Badge>
+                            </div>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="event-description">{event.description}</p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
-            {/* Past Events */}
-            <div className="events-section">
-              <h3 className="events-title">Past Events</h3>
-              <div className="events-list">
-                {eventsData.past.map((event) => (
-                  <Card key={event.id} className="event-card past">
-                    <CardHeader>
-                      <CardTitle className="event-title">{event.title}</CardTitle>
-                      <div className="event-meta">
-                        <span className="event-info">
-                          <Calendar className="event-icon" />
-                          {event.date}
-                        </span>
-                        <span className="event-info">
-                          <MapPin className="event-icon" />
-                          {event.location}
-                        </span>
-                        <Badge variant="outline" className="event-role">{event.role}</Badge>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="event-description">{event.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
+                {/* Past Events */}
+                {eventsData.past.length > 0 && (
+                  <div className="events-section">
+                    <h3 className="events-title">Past Events</h3>
+                    <div className="events-list">
+                      {eventsData.past.map((event) => (
+                        <Card key={event.id} className="event-card past">
+                          <CardHeader>
+                            <CardTitle className="event-title">{event.title}</CardTitle>
+                            <div className="event-meta">
+                              <span className="event-info">
+                                <Calendar className="event-icon" />
+                                {event.date}
+                              </span>
+                              <span className="event-info">
+                                <MapPin className="event-icon" />
+                                {event.location}
+                              </span>
+                              <Badge variant="outline" className="event-role">{event.role}</Badge>
+                            </div>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="event-description">{event.description}</p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
           </div>
         </div>
       </section>
