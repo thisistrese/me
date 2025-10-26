@@ -770,7 +770,7 @@ section {
   }
 
   .hero-section {
-    padding: 6rem 1.5rem 4rem;
+    padding: 7rem 1.5rem 4rem;
   }
 
   section {
@@ -783,24 +783,37 @@ section {
 
   .story-quote {
     padding-left: 1.5rem;
+    font-size: 1.1rem;
   }
 
-  .work-header {
+  .tier-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tier-price-box {
+    text-align: left;
+  }
+
+  .brand-header {
     flex-direction: column;
   }
 
   .brands-grid,
-  .inspiration-grid {
+  .inspiration-grid,
+  .work-grid {
     grid-template-columns: 1fr;
   }
 
   .contact-links {
     flex-direction: column;
+    width: 100%;
   }
 
   .contact-button,
   .contact-button-outline {
     width: 100%;
+    justify-content: center;
   }
 
   .inspiration-header {
