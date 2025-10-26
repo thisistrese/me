@@ -744,6 +744,31 @@ section {
   gap: 4rem;
 }
 
+.coming-soon-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--pure-white);
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+}
+
+.coming-soon-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--deep-navy);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.coming-soon-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: var(--medium-gray);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
 .events-section {
   display: flex;
   flex-direction: column;
