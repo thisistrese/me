@@ -534,6 +534,41 @@ section {
   margin-top: 2px;
 }
 
+.tier-cta {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: var(--rose-gold);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  letter-spacing: -0.01em;
+  transition: all 0.2s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tier-cta:hover {
+  background-color: #a55e68;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.work-card:first-child .tier-cta {
+  background: transparent;
+  color: var(--royal-purple);
+  border: 1px solid var(--royal-purple);
+}
+
+.work-card:first-child .tier-cta:hover {
+  background-color: var(--royal-purple);
+  color: white;
+}
+
 /* Inspiration Section */
 .inspiration-section {
   background: var(--pure-white);
