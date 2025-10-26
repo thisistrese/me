@@ -74,10 +74,10 @@ export const workData = [
   {
     id: 2,
     tier: "Thought Partnership",
-    level: "Core Level",
+    level: "Experienced Level",
     icon: "⚫",
-    price: "$25,000",
-    priceDetail: "$25,000/year",
+    price: "$2,500",
+    priceDetail: "$2,500/month or $25,000/year",
     capacity: "8 partners",
     description: "Structured, practical collaboration through twice-monthly strategy sessions. Designed for professionals seeking guided clarity and real-time application.",
     benefits: [
@@ -93,7 +93,7 @@ export const workData = [
   {
     id: 3,
     tier: "Strategic Advisory",
-    level: "Advanced Level",
+    level: "Management Level",
     icon: "⚪",
     price: "$55,000",
     priceDetail: "$55,000/year",
