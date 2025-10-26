@@ -176,58 +176,9 @@ export const inspirationData = [
 ];
 
 export const eventsData = {
-  upcoming: [
-    {
-      id: 1,
-      title: "Climate Leadership Forum 2025",
-      date: "April 15-17, 2025",
-      location: "Nairobi, Kenya",
-      role: "Keynote Speaker",
-      description: "Speaking on building sustainable infrastructure capacity across emerging markets."
-    },
-    {
-      id: 2,
-      title: "Tech for Good Summit",
-      date: "May 8, 2025",
-      location: "Virtual",
-      role: "Panelist",
-      description: "Discussing dignified work pathways in the gig economy."
-    },
-    {
-      id: 3,
-      title: "AgriTech Innovation Workshop",
-      date: "June 2-3, 2025",
-      location: "Accra, Ghana",
-      role: "Host",
-      description: "Facilitating sessions on climate-smart agriculture and market linkages."
-    }
-  ],
-  past: [
-    {
-      id: 1,
-      title: "Global Development Conference",
-      date: "January 2025",
-      location: "Washington, D.C.",
-      role: "Speaker",
-      description: "Presented on cross-sector collaboration models for sustainable development."
-    },
-    {
-      id: 2,
-      title: "Women in Leadership Series",
-      date: "November 2024",
-      location: "Virtual",
-      role: "Panelist",
-      description: "Shared insights on building resilient teams and organizations."
-    },
-    {
-      id: 3,
-      title: "Climate Action Summit",
-      date: "September 2024",
-      location: "Lagos, Nigeria",
-      role: "Workshop Facilitator",
-      description: "Led capacity-building sessions for climate infrastructure projects."
-    }
-  ]
+  upcoming: [],
+  past: [],
+  comingSoon: true
 };
 
 export const contactData = {
