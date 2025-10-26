@@ -236,7 +236,7 @@ export const contactData = {
   links: [
     {
       label: "Email",
-      url: "mailto:theresa@onesynergee.org",
+      url: "mailto:about@thisistrese.me",
       icon: "mail"
     }
   ]
