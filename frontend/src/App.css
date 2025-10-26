@@ -440,6 +440,12 @@ section {
   margin-bottom: 1rem;
 }
 
+.tier-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
 .tier-name {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
