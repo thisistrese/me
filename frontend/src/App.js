@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'story', 'work', 'brands', 'inspiration', 'connect'];
+      const sections = ['home', 'story', 'brands', 'work', 'inspiration', 'connect'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -52,7 +52,7 @@ function App() {
         <div className="nav-content">
           <div className="nav-logo">TR</div>
           <div className="nav-links">
-            {['Home', 'Story', 'Work', 'Brands', 'Inspiration', 'Connect'].map((item) => (
+            {['Home', 'Story', 'Brands', 'Work', 'Inspiration', 'Connect'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -72,7 +72,7 @@ function App() {
         </div>
         {mobileMenuOpen && (
           <div className="mobile-menu">
-            {['Home', 'Story', 'Work', 'Brands', 'Inspiration', 'Connect'].map((item) => (
+            {['Home', 'Story', 'Brands', 'Work', 'Inspiration', 'Connect'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -91,7 +91,7 @@ function App() {
           <h1 className="hero-title">{heroData.title}</h1>
           <p className="hero-subtitle">{heroData.subtitle}</p>
           <Button 
-            onClick={() => scrollToSection('work')} 
+            onClick={() => scrollToSection('brands')} 
             className="hero-cta"
             size="lg"
           >
@@ -113,6 +113,30 @@ function App() {
           </div>
           <div className="story-anchor">
             <p className="anchor-line">{storyData.anchorLine}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands Section */}
+      <section id="brands" className="brands-section">
+        <div className="section-container">
+          <h2 className="section-title">Brands</h2>
+          <div className="brands-grid">
+            {brandsData.map((brand) => (
+              <Card key={brand.id} className="brand-card">
+                <CardHeader>
+                  <div className="brand-header">
+                    <CardTitle className="brand-name">{brand.name}</CardTitle>
+                    <Badge variant="outline" className="brand-years">{brand.years}</Badge>
+                  </div>
+                  <CardDescription className="brand-role">{brand.role}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="brand-tagline">{brand.tagline}</p>
+                  <p className="brand-summary">{brand.summary}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -148,30 +172,6 @@ function App() {
                       </div>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Brands Section */}
-      <section id="brands" className="brands-section">
-        <div className="section-container">
-          <h2 className="section-title">Brands</h2>
-          <div className="brands-grid">
-            {brandsData.map((brand) => (
-              <Card key={brand.id} className="brand-card">
-                <CardHeader>
-                  <div className="brand-header">
-                    <CardTitle className="brand-name">{brand.name}</CardTitle>
-                    <Badge variant="outline" className="brand-years">{brand.years}</Badge>
-                  </div>
-                  <CardDescription className="brand-role">{brand.role}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="brand-tagline">{brand.tagline}</p>
-                  <p className="brand-summary">{brand.summary}</p>
                 </CardContent>
               </Card>
             ))}

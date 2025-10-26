@@ -3,7 +3,7 @@
 export const heroData = {
   title: "Theresa Renee",
   subtitle: "Building solutions that connect people, purpose, and progress.",
-  cta: "Explore My Work"
+  cta: "Work with me"
 };
 
 export const storyData = {
@@ -14,6 +14,42 @@ export const storyData = {
   ],
   anchorLine: "I design practical systems with and for people—so the good work lasts."
 };
+
+// Brands - Reorganized by priority: for-profit and longest tenure first
+export const brandsData = [
+  {
+    id: 1,
+    name: "MaidHop",
+    role: "Founder",
+    tagline: "Tech-enabled dignified work and upward mobility pathways.",
+    years: "2013 – Present",
+    summary: "We create dignified, tech-enabled pathways for work and independence—linking skilled cleaning professionals with households and businesses through fair pay, flexible scheduling, and community-driven support."
+  },
+  {
+    id: 2,
+    name: "OneSynergee, Inc.",
+    role: "Global Initiatives",
+    tagline: "Backbone for community-driven development and cross-sector collaboration.",
+    years: "2021 – Present",
+    summary: "We work with communities to design practical, sustainable ways that strengthen local economies and resilience across the Global South—advancing shared goals through collaboration, grounded strategy, and lasting local leadership."
+  },
+  {
+    id: 3,
+    name: "ACCF (an ACV Initiative)",
+    role: "Program Director",
+    tagline: "Climate-capacity fellowships aligned to real deployment needs.",
+    years: "2023 – Present",
+    summary: "We develop climate and infrastructure readiness programs that equip emerging leaders with the skills, standards, and project experience needed to drive measurable progress within their regions."
+  },
+  {
+    id: 4,
+    name: "AgriCharity",
+    role: "Founding Director",
+    tagline: "Harvest tracking and market access for climate-smart smallholders.",
+    years: "2024 – Present",
+    summary: "We connect smallholder farmers with markets through climate-smart, transparent agriculture systems—strengthening local production networks and advancing sustainable, verifiable trade models."
+  }
+];
 
 // Work With Me - Consulting Tiers
 export const workData = [
@@ -79,42 +115,6 @@ export const workData = [
       "Founding Partner recognition"
     ],
     featured: true
-  }
-];
-
-// Brands - Reorganized by priority: for-profit and longest tenure first
-export const brandsData = [
-  {
-    id: 1,
-    name: "MaidHop",
-    role: "Founder",
-    tagline: "Tech-enabled dignified work and upward mobility pathways.",
-    years: "2013 – Present",
-    summary: "We create dignified, tech-enabled pathways for work and independence—linking skilled cleaning professionals with households and businesses through fair pay, flexible scheduling, and community-driven support."
-  },
-  {
-    id: 2,
-    name: "OneSynergee, Inc.",
-    role: "Global Initiatives",
-    tagline: "Backbone for community-driven development and cross-sector collaboration.",
-    years: "2021 – Present",
-    summary: "We work with communities to design practical, sustainable ways that strengthen local economies and resilience across the Global South—advancing shared goals through collaboration, grounded strategy, and lasting local leadership."
-  },
-  {
-    id: 3,
-    name: "ACCF (an ACV Initiative)",
-    role: "Program Director",
-    tagline: "Climate-capacity fellowships aligned to real deployment needs.",
-    years: "2023 – Present",
-    summary: "We develop climate and infrastructure readiness programs that equip emerging leaders with the skills, standards, and project experience needed to drive measurable progress within their regions."
-  },
-  {
-    id: 4,
-    name: "AgriCharity",
-    role: "Founding Director",
-    tagline: "Harvest tracking and market access for climate-smart smallholders.",
-    years: "2024 – Present",
-    summary: "We connect smallholder farmers with markets through climate-smart, transparent agriculture systems—strengthening local production networks and advancing sustainable, verifiable trade models."
   }
 ];
 
