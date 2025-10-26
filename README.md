@@ -84,5 +84,5 @@ yarn build
 
 ## 📧 Contact
 
-- Email: theresa@onesynergee.org
+- Email: about@thisistrese.me
 - Substack: https://thisistrese.substack.com
