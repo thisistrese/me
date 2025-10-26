@@ -62,7 +62,27 @@ function App() {
               </button>
             ))}
           </div>
+          <button 
+            className="mobile-menu-button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+        {mobileMenuOpen && (
+          <div className="mobile-menu">
+            {['Home', 'Story', 'Work', 'Brands', 'Inspiration', 'Connect'].map((item) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(item.toLowerCase())}
+                className={`mobile-nav-link ${activeSection === item.toLowerCase() ? 'active' : ''}`}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
