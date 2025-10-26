@@ -618,8 +618,8 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .nav-content {
+    padding: 0 1.5rem;
   }
 
   .hero-section {
